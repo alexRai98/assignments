@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');    
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Baloo 2', cursive;
+    color: #333333;
+}
+*,td{
+    box-sizing: border-box;
+}
+table{
+    width: 1120px;
+    border-collapse: collapse;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.table_section{
+    height: 640x;
+    width: 1120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table_section table h1{
+    font-size: 24px;
+}
+
+.table_section table td{
+    height: 90px;
+    text-align: center;
+  
+}
+.table_section table tbody tr:nth-child(odd){
+    background: #C6CBD4;
+   
+}
+.table_section table span{
+    background: #4B74FF;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 0 5px;
+    width: 64px;
+    padding: 5px;
+}
+.input-radio-status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table-img img{
+    width: 10px;
+}
+.input-radio-status  input{
+    height: 80px;
+}
+.company{
+    color: #4B74FF;
+}
