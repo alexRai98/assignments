@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleForm2.css">
+    <title>Form 2</title>
+</head>
+<body>
+    <main class="main">
+        <section class="form_secction">
+            <div class="enbabezado">
+                <h1>Ready to get started?</h1>
+                <h3>Prepare to join one of the top lawyer communities</h3>
+            </div>
+            <form action="#" method="POST" class="form">
+                <fieldset class="inputs">
+                    <label for="first_name"> First Name <span>(Required)</span></label>
+                    <input type="text" name="first_name" required>
+                    <label for="last_name"> Last Name <span>(Required)</span></label>
+                    <input type="text" name="last_name" required>
+                    <label for="email">Email <span>(Required)</span></label>
+                    <input type="email" name="email" required>
+                    <label for="password">Password <span>(Required)</span></label>
+                    <input type="password" name="password" required>
+                    <label for="zip_code">Zip Code <span>(Required)</span></label>
+                    <input type="text" name="zip_code" maxlength="6" placeholder="123456" required>
+                    <label for="practicing_status" >Practicing Status <span>(Required)</span></label>
+                    <select name="practicing_status" id="" required>
+                        <option value="">Practicing Lawyer</option>
+                        <option value="">Non Practicing Lawyer</option>
+                        <option value="">Retired Lawyer</option>
+                    </select>
+                    <label for="legal_expertise">Legal Expertise <span>(Optional)</span></label>
+                    <select name="legal_expertise" id="">
+                        <option value="Antitrust">Antitrust</option>
+                        <option value="Civil_Rights">Civil Rights</option>
+                        <option value="Immigration">Immigration</option>
+                        <option value="Memes">Memes</option>
+                        <option value="Gaming">Gaming</option>
+                        <option value="pretending_work">Pretending to work</option>
+                        <option value="other" selected>Other</option>
+                    </select>
+                    <label for="years_of_experience">Years Experience <span>(Required)</span></label>
+                    <input type="number" name="years_of_experience" max="60" required>
+                    <label for="phone_number">Cell Phone Number<span>(Optional)</span></label>
+                    <input type="text" name="phone_number" maxlength="9" placeholder="#########">
+                    
+                    <label for="ethnicity" >Ethnicity <span>(Required)</span></label>
+                    <div class="radio_group">
+                        <input type="radio" name="ethnicity" required><h4>Earthling</h4> 
+                        <input type="radio" name="ethnicity"><h4>Martian</h4>
+                        <input type="radio" name="ethnicity"><h4>Asgardian</h4>
+                    </div>
+    
+                    <label for="languages" class="lag">Languages<span>(Optional)</span></label>
+                    <div class="check_group">
+                        <div><input type="checkbox" name="languages" value="es"> Spanish</div>
+                        <div><input type="checkbox" name="languages" value="en"> English</div>
+                        <div><input type="checkbox" name="languages" value="ky"> Kryptonese</div>
+                        <div><input type="checkbox" name="languages" value="kl"> Klingon</div>
+                        <div><input type="checkbox" name="languages" value="vu"> Vulcan</div>
+                        <div><input type="checkbox" name="languages" value="ali"> Alienese</div>
+                        <div><input type="checkbox" name="languages" value="el"> Elvish</div>
+                        
+    
+                    </div>
+                    <div class="permisos">
+                        <input type="checkbox" name="terms_of_use" required> I<label for="terms_of_use" > swear that i totally read the terms of use<span>(Required)</span></label>
+                    </div>
+                    <button type="submit">Create your account</button>
+                </fieldset>
+             
+                    
+                
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
