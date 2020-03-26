@@ -1,0 +1,22 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+   
+    background: #E5E5E5;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.codeable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #A0A2A6;
+ 
+}
