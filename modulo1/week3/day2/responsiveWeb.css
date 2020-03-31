@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+p{
+    font-size: 17px;
+    color: #666666;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(auto,1024px);
+}
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "about level-1 level-2"
+                         "about level-3 level-4";
+    margin: 75px 0px;
+
+}
+.about{
+    grid-area: about;
+}
+.about h1{
+    font-size: 36px;
+}
+.content{
+    max-width: 262px;
+}
+.content img{
+    width: 56px;
+}
+.level-1{
+    grid-area: level-1;
+}
+.level-2{
+    grid-area: level-2;
+}
+.level-3{
+    grid-area: level-3;
+}
+.level-4{
+    grid-area: level-4;
+}
+.features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "bottle title"
+                         "bottle nivel-1"
+                         "bottle nivel-2";
+    margin: 75px 0px;
+    grid-gap: 0px 50px;
+}
+.bottle{
+    grid-area: bottle;
+    margin: 0px;
+}
+.bottle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+    grid-area: title;
+    font-size: 46px;
+}
+.content-features{
+    display: grid;
+    grid-template-columns: 40px minmax(auto,408px);   
+    grid-template-areas: "logo text";
+    grid-gap: 0px 10px;
+  
+}
+.content-features img{
+    width: 32px;
+    grid-area: logo;
+}
+.content-features h2{
+    font-size: 20px;
+    margin-top: 0px;
+}
+.text{
+    grid-area: text;
+}
+.nivel-1{
+    grid-area: nivel-1;
+}
+.nivel-2{
+    grid-area: nivel-2;
+}
+
+@media screen and (max-width:1439px){
+    .hero{
+        grid-gap: 0px 20px;
+    }
+    .container{
+        margin: 0px 25px;
+    }
+    .content h2{
+        font-size: 18px;
+    }
+    .features{
+        grid-template-rows: 450px 1fr 1fr;
+        grid-template-areas: "bottle bottle"
+                             "title title"
+                             "nivel-1 nivel-2";
+        margin: 25px 0px;
+        grid-gap: 0px;
+    }
+    .nivel-2{
+        justify-self: flex-end;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        margin: 0px 22px;
+        padding: 0px;
+    }
+    .hero{
+        grid-template-columns: 1fr ;
+        grid-template-areas: "about "
+                             "level-1"
+                             "level-2"
+                             "level-3"
+                             "level-4";  
+        text-align: center;
+        
+    }
+    .about h1{
+        margin-top: 0px;
+        font-size: 32px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+    }
+    .features{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
+        grid-template-areas: "title"
+                             "nivel-1"
+                             "nivel-2"
+                             "bottle";
+        text-align: center;
+        grid-gap: 10px 0px;
+        margin: 0px;   
+    }  
+    .features h1{
+        margin-top: 0px;
+    }
+    .content-features{
+        justify-self: center;
+    }
+    .text{  
+        text-align: left;
+    }
+
+}
+
