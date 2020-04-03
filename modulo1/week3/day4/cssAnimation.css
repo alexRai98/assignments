@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.spiner img{
+    
+    animation-name: spiner;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(10);
+}
+@keyframes spiner{
+    to{
+        transform: rotatez(360deg);
+    }
+}
